@@ -9,6 +9,10 @@ __pycache__/
 .venv/
 venv/
 
+# downloaded source and local evaluation output
+/data/labor_code.json
+/evaluation/golden_results.json
+
 # os / editor
 .DS_Store
 .idea/

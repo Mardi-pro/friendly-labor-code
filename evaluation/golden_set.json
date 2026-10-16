@@ -1,0 +1,205 @@
+[
+  {
+    "id": "CT-001",
+    "category": "Contrato de Trabalho e Presunção de Laboralidade",
+    "input": "Um prestador de serviços trabalha diariamente nas instalações da empresa, utiliza o computador e telemóvel da empresa, cumpre horário fixo definido pela chefia e recebe um valor fixo mensal. Pode exigir o reconhecimento de contrato de trabalho?",
+    "must_retrieve": [
+      "Artigo 11.º",
+      "Artigo 12.º"
+    ],
+    "expected_key_info": "Nos termos do Artigo 12.º do Código do Trabalho, presume-se a existência de contrato de trabalho quando se verificam pelo menos duas características como a prestação em local do beneficiário, utilização de equipamentos deste, cumprimento de horário fixado e retribuição periódica certa.",
+    "should_abstain": false
+  },
+  {
+    "id": "CT-002",
+    "category": "Plataformas Digitais",
+    "input": "Um estafeta que trabalha via aplicação informática de uma plataforma digital tem a sua retribuição fixada pela aplicação, que também supervisiona as entregas em tempo real e pode desativar a sua conta. Existe presunção de contrato de trabalho?",
+    "must_retrieve": [
+      "Artigo 12.º-A"
+    ],
+    "expected_key_info": "O Artigo 12.º-A estabelece a presunção de contrato de trabalho no âmbito de plataforma digital quando a plataforma fixa a retribuição, exerce controlo/supervisão em tempo real ou pode aplicar sanções como a desativação da conta.",
+    "should_abstain": false
+  },
+  {
+    "id": "CT-003",
+    "category": "Proteção de Dados e Exames Médicos",
+    "input": "A empresa pode exigir a uma candidata a emprego a realização de um teste de gravidez antes da contratação?",
+    "must_retrieve": [
+      "Artigo 17.º",
+      "Artigo 19.º"
+    ],
+    "expected_key_info": "Nos termos do Artigo 19.º, n.º 2 do Código do Trabalho, o empregador não pode, em circunstância alguma, exigir a candidata a emprego ou a trabalhadora a realização ou apresentação de testes ou exames de gravidez. Constitui contra-ordenação muito grave.",
+    "should_abstain": false
+  },
+  {
+    "id": "CT-004",
+    "category": "Meios de Vigilância a Distância",
+    "input": "O empregador pode instalar câmaras de videovigilância focadas diretamente na secretária do trabalhador para controlar a sua produtividade diária?",
+    "must_retrieve": [
+      "Artigo 20.º",
+      "Artigo 21.º"
+    ],
+    "expected_key_info": "O Artigo 20.º, n.º 1 proíbe a utilização de meios de vigilância a distância no local de trabalho com a finalidade de controlar o desempenho profissional do trabalhador. A utilização só é lícita para proteção de pessoas e bens ou exigências da atividade, mediante autorização e aviso prévio.",
+    "should_abstain": false
+  },
+  {
+    "id": "CT-005",
+    "category": "Igualdade e Não Discriminação",
+    "input": "Um trabalhador alega que ganha menos do que um colega que desempenha exatamente as mesmas funções. A quem cabe o ónus da prova em caso de alegação de discriminação?",
+    "must_retrieve": [
+      "Artigo 24.º",
+      "Artigo 25.º"
+    ],
+    "expected_key_info": "De acordo com o Artigo 25.º, n.º 5 do Código do Trabalho, cabe a quem alega discriminação indicar o trabalhador em relação ao qual se considera discriminado, incumbindo ao empregador provar que a diferença de tratamento assenta em critérios objetivos e não em fator de discriminação.",
+    "should_abstain": false
+  },
+  {
+    "id": "CT-006",
+    "category": "Assédio no Trabalho",
+    "input": "O que caracteriza o assédio moral no local de trabalho segundo o Código do Trabalho e quais as consequências jurídicas para a empresa?",
+    "must_retrieve": [
+      "Artigo 29.º"
+    ],
+    "expected_key_info": "O Artigo 29.º define assédio como o comportamento indesejado praticado com o objetivo ou efeito de perturbar/constranger a pessoa, afetar a sua dignidade ou criar um ambiente intimidativo/hostil. Confere direito a indemnização e constitui contra-ordenação muito grave.",
+    "should_abstain": false
+  },
+  {
+    "id": "CT-007",
+    "category": "Parentalidade - Risco Clínico",
+    "input": "A trabalhadora grávida que tenha uma prescrição médica indicando risco clínico para a gravidez tem direito a que licença e com que formalidades?",
+    "must_retrieve": [
+      "Artigo 35.º",
+      "Artigo 37.º"
+    ],
+    "expected_key_info": "Segundo o Artigo 37.º, a trabalhadora grávida tem direito a licença em situação de risco clínico pelo período considerado necessário por prescrição médica, devendo informar o empregador e apresentar atestado médico.",
+    "should_abstain": false
+  },
+  {
+    "id": "CT-008",
+    "category": "Parentalidade - Licença Parental da Mãe",
+    "input": "Quantos dias de licença parental inicial são obrigatórios para a mãe gozar imediatamente a seguir ao parto?",
+    "must_retrieve": [
+      "Artigo 40.º",
+      "Artigo 41.º"
+    ],
+    "expected_key_info": "Nos termos do Artigo 41.º, n.º 2 do Código do Trabalho, é obrigatório o gozo, por parte da mãe, de 42 dias consecutivos de licença parental inicial a seguir ao parto.",
+    "should_abstain": false
+  },
+  {
+    "id": "CT-009",
+    "category": "Parentalidade - Licença Parental do Pai",
+    "input": "Qual é a duração da licença parental exclusiva do pai e em que prazos deve ser gozada após o nascimento do filho?",
+    "must_retrieve": [
+      "Artigo 43.º"
+    ],
+    "expected_key_info": "O Artigo 43.º, n.º 1 estabelece que é obrigatório o gozo pelo pai de uma licença parental de 28 dias (seguidos ou interpolados de no mínimo 7 dias) nos 42 dias seguintes ao nascimento, sendo 7 gozados consecutivamente logo a seguir ao parto.",
+    "should_abstain": false
+  },
+  {
+    "id": "CT-010",
+    "category": "Dispensas para Aleitação e Amamentação",
+    "input": "Uma mãe que regressa ao trabalho após a licença parental tem direito a dispensa diária para amamentação? Como se organiza o tempo?",
+    "must_retrieve": [
+      "Artigo 47.º",
+      "Artigo 48.º"
+    ],
+    "expected_key_info": "O Artigo 47.º garante a dispensa para amamentação durante todo o tempo que esta durar. A dispensa diária é gozada em dois períodos distintos de no máximo uma hora cada, mediante comunicação ao empregador nos termos do Artigo 48.º.",
+    "should_abstain": false
+  },
+  {
+    "id": "CT-011",
+    "category": "Faltas para Assistência a Filho",
+    "input": "Um trabalhador precisa de faltar ao trabalho para prestar assistência inadiável a um filho doente de 8 anos. A quantos dias de falta justificada por ano tem direito?",
+    "must_retrieve": [
+      "Artigo 49.º"
+    ],
+    "expected_key_info": "Nos termos do Artigo 49.º, n.º 1, o trabalhador pode faltar justificadamente para prestar assistência inadiável e imprescindível a filho menor de 12 anos até 30 dias por ano (ou durante todo o período de eventual hospitalização).",
+    "should_abstain": false
+  },
+  {
+    "id": "CT-012",
+    "category": "Horário Flexível para Responsabilidades Familiares",
+    "input": "O empregador pode recusar um pedido de horário flexível formulado por um trabalhador com um filho menor de 6 anos sem consultar nenhuma entidade externa?",
+    "must_retrieve": [
+      "Artigo 56.º",
+      "Artigo 57.º"
+    ],
+    "expected_key_info": "Não. Nos termos do Artigo 57.º, o empregador só pode recusar com fundamento em exigências imperiosas do funcionamento da empresa ou impossibilidade de substituição, devendo obrigatoriamente remeter o processo para parecer da CITE (Comissão para a Igualdade no Trabalho e no Emprego). Se omitir a submissão, considera-se o pedido aceite.",
+    "should_abstain": false
+  },
+  {
+    "id": "CT-013",
+    "category": "Trabalho de Menores",
+    "input": "Qual é a idade mínima legal para admissão ao trabalho em Portugal e quais os requisitos de escolaridade?",
+    "must_retrieve": [
+      "Artigo 68.º",
+      "Artigo 69.º"
+    ],
+    "expected_key_info": "Segundo o Artigo 68.º, a idade mínima de admissão é de 16 anos, exigindo-se que o menor tenha concluído a escolaridade obrigatória ou esteja matriculado e a frequentar o ensino secundário.",
+    "should_abstain": false
+  },
+  {
+    "id": "CT-014",
+    "category": "Trabalhador-Estudante",
+    "input": "Um trabalhador-estudante tem direito a faltar nos dias de exames e provas de avaliação? Quais as condições?",
+    "must_retrieve": [
+      "Artigo 89.º",
+      "Artigo 91.º"
+    ],
+    "expected_key_info": "Nos termos do Artigo 91.º, o trabalhador-estudante pode faltar justificadamente no dia da prova de avaliação e no dia imediatamente anterior (até ao limite de 4 dias por disciplina em cada ano letivo), mantendo o direito à retribuição.",
+    "should_abstain": false
+  },
+  {
+    "id": "CT-015",
+    "category": "Contrato de Trabalho a Termo",
+    "input": "Em que situações é admissível a celebração de um contrato de trabalho a termo resolutivo segundo o Código do Trabalho?",
+    "must_retrieve": [
+      "Artigo 140.º"
+    ],
+    "expected_key_info": "O Artigo 140.º estabelece que o contrato a termo só é admissível para a satisfação de necessidades temporárias da empresa e pelo período estritamente necessário a esse fim (ex.: substituição direta de trabalhador ausente, acréscimo excecional de atividade, execução de obra ou tarefa determinada).",
+    "should_abstain": false
+  },
+  {
+    "id": "CT-016",
+    "category": "Teletrabalho",
+    "input": "Quem deve fornecer e custear os equipamentos e sistemas informáticos necessários para a prestação de trabalho em regime de teletrabalho?",
+    "must_retrieve": [
+      "Artigo 165.º",
+      "Artigo 168.º"
+    ],
+    "expected_key_info": "De acordo com o Artigo 168.º do Código do Trabalho, o empregador é responsável pela disponibilização ao trabalhador dos equipamentos e sistemas necessários à realização do teletrabalho, bem como pela compensação de despesas adicionais acordadas ou comprovadas.",
+    "should_abstain": false
+  },
+  {
+    "id": "CT-017",
+    "category": "Fora do Âmbito - Fiscalidade",
+    "input": "Qual é a taxa de retenção na fonte de IRS aplicável aos dividendos distribuídos por uma sociedade por quotas a sócios residentes em Portugal?",
+    "must_retrieve": [],
+    "expected_key_info": "A aplicação deve informar que a questão diz respeito ao Código do IRS / Direito Fiscal, estando fora da sua base de conhecimento centrada no Código do Trabalho.",
+    "should_abstain": true
+  },
+  {
+    "id": "CT-018",
+    "category": "Fora do Âmbito - Licenciamento Comercial",
+    "input": "Quais são os documentos e taxas municipais necessários para obter a licença de utilização comercial e alvará de um restaurante?",
+    "must_retrieve": [],
+    "expected_key_info": "O sistema deve abster-se e indicar que o licenciamento de estabelecimentos comerciais pertence ao Direito Administrativo / Regulamento Municipal, fora do âmbito do Código do Trabalho.",
+    "should_abstain": true
+  },
+  {
+    "id": "CT-019",
+    "category": "Fora do Âmbito - Processo Penal",
+    "input": "Qual é o prazo legal para interpor recurso de uma sentença condenatória proferida em processo crime no Tribunal Judicial?",
+    "must_retrieve": [],
+    "expected_key_info": "A aplicação deve indicar que a dúvida se refere ao Código de Processo Penal, devendo abster-se de responder por estar fora do âmbito da legislação laboral.",
+    "should_abstain": true
+  },
+  {
+    "id": "CT-020",
+    "category": "Fora do Âmbito - Direito Tributário / IVA",
+    "input": "Como funciona a isenção de IVA nas transmissões intracomunitárias de bens e que declaração recapitulative deve ser entregue à Autoridade Tributária?",
+    "must_retrieve": [],
+    "expected_key_info": "O sistema deve informar que a questão trata do Código do IVA e Regulamentação Tributária, estando fora do seu escopo exclusivo sobre o Código do Trabalho.",
+    "should_abstain": true
+  }
+]

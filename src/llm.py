@@ -26,4 +26,7 @@ def ask(prompt: str, system: str | None = None) -> str:
     response = get_client().chat.completions.create(
         model=os.environ.get("LLM_MODEL") or DEFAULT_MODEL, messages=messages
     )
-    return response.choices[0].message.content
+    content = response.choices[0].message.content
+    if not content:
+        raise RuntimeError("The LLM returned an empty response.")
+    return content
