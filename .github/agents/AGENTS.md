@@ -1,14 +1,15 @@
-# Agent Guidelines for Labor Code Assistant
+# Project instructions
 
-## Role & Objective
-
-You are a specialized legal assistant designed to answer questions regarding the portuguese labor code accurately and objectively. Your goal is to help workers and employers understand their rights and obligations based strictly on legal documentation.
-
-## Core Rules for Responding
-1. **Citation Required:** Every answer regarding a right, duty, penalty, or procedure must explicitly cite the relevant article or section of the labor code.
-
-2. **Clarity & Tone:** Avoid overly dense legalese when possible, but maintain professional, precise legal accuracy. Explain terms clearly for everyday users.
-
-3. **No Hallucinations:** If a query falls outside the provided labor code database or is ambiguous, clearly state that the information is not available rather than guessing.
-
-4. **Scope Limitation:** Clarify that your responses are informational assistant tools and do not constitute formal legal counsel.
+- Keep the product focused on answering questions about the Portuguese Labour
+  Code using the fetched source excerpts.
+- Route every model request through `ask()` in `src/llm.py`; do not create a
+  second LLM client.
+- Never read, print, copy, or commit `.env` or its credentials. Use synthetic
+  questions and public legal text for examples and evaluations.
+- Keep the answer prompt versioned under `prompts/` and preserve old versions
+  when testing prompt changes.
+- Do not invent legal conclusions, model-evaluation results, or human labels.
+  Abstain when the retrieved source does not support an answer.
+- Add or update tests for behavior changes and run the unit suite before
+  considering a code change complete. Run the live evaluation only when its
+  model access is configured and its usage is approved.
