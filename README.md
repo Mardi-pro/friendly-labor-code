@@ -61,6 +61,7 @@ python src/app.py "A empresa pode exigir um teste de gravidez a uma candidata?"
 
 As respostas são informativas, não constituem aconselhamento jurídico e devem
 abster-se quando os excertos não sustentarem uma conclusão.
+O assistente responde no mesmo idioma da pergunta, incluindo em inglês.
 
 ## Avaliação
 

@@ -8,7 +8,7 @@ from llm import ask
 from labor_code import load_labor_code, retrieve_articles
 
 ROOT = Path(__file__).resolve().parents[1]
-PROMPT_VERSION = "labor_code_v1"
+PROMPT_VERSION = "labor_code_v2"
 PROMPT_PATH = ROOT / "prompts" / f"{PROMPT_VERSION}.md"
 
 

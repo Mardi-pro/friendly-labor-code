@@ -68,7 +68,13 @@ class AppTests(unittest.TestCase):
         self.assertEqual(args, ("Pergunta?",))
         self.assertIn("12.º — Presunção de contrato de trabalho", kwargs["system"])
         self.assertIn("Texto do artigo.", kwargs["system"])
-        self.assertIn("Portuguese Labour Code Q&A — v1", kwargs["system"])
+        self.assertIn("Portuguese Labour Code Q&A — v2", kwargs["system"])
+        normalized_prompt = " ".join(kwargs["system"].split())
+        self.assertIn(
+            "Write the entire response, including `answer` and `follow_up`, in "
+            "the same language as the user's question.",
+            normalized_prompt,
+        )
 
     def test_no_retrieved_articles_can_only_return_an_uncited_unknown(self):
         from app import parse_answer
