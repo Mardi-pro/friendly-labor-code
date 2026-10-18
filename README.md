@@ -60,8 +60,17 @@ python src/app.py "A empresa pode exigir um teste de gravidez a uma candidata?"
 ```
 
 As respostas são informativas, não constituem aconselhamento jurídico e devem
-abster-se quando os excertos não sustentarem uma conclusão.
-O assistente responde no mesmo idioma da pergunta, incluindo em inglês.
+abster-se quando os excertos não sustentarem uma conclusão. Perguntas noutros
+idiomas são traduzidas em palavras-chave em português para a recuperação dos
+artigos; a explicação jurídica final é traduzida com base no idioma da pergunta
+original, sem depender da deteção de idioma da etapa de recuperação.
+Na interface web, o seletor permite escolher os rótulos e controlos em
+português ou inglês, independentemente do idioma da pergunta. A resposta e os
+artigos consultados são apresentados no idioma selecionado para a interface.
+Quando o português está selecionado, a resposta e as fontes permanecem no
+português original; quando o inglês está selecionado, são traduzidas para
+inglês. As traduções são apenas para facilitar a leitura, pois o texto legal
+oficial está em português.
 
 ## Avaliação
 

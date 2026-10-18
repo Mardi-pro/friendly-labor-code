@@ -157,7 +157,7 @@ def evaluate() -> list[dict]:
                 and not missing_citations
                 and abstained == case["should_abstain"]
             )
-            formatted_answer = format_answer(structured_answer)
+            formatted_answer = format_answer(structured_answer, case["input"])
             result = {
                 "id": case["id"],
                 "category": case["category"],
