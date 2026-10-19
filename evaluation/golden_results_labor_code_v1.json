@@ -1,0 +1,849 @@
+{
+  "prompt_version": "labor_code_v1",
+  "source_url": "https://www.pgdlisboa.pt/leis/lei_mostra_articulado.php?ficha=1&artigo_id=&nid=1047&pagina=1&tabela=leis&nversao=&so_miolo=",
+  "source_fetched_at": "2026-10-16T20:37:54.821404+00:00",
+  "results": [
+    {
+      "id": "CT-001",
+      "category": "Contrato de Trabalho e Presunção de Laboralidade",
+      "input": "Um prestador de serviços trabalha diariamente nas instalações da empresa, utiliza o computador e telemóvel da empresa, cumpre horário fixo definido pela chefia e recebe um valor fixo mensal. Pode exigir o reconhecimento de contrato de trabalho?",
+      "prompt_version": "labor_code_v1",
+      "answer": {
+        "status": "answered",
+        "answer": "Em princípio, sim — pelos elementos que descreve, pode haver presunção de contrato de trabalho. O Artigo 12.º prevê que se presume a existência de contrato de trabalho quando, entre quem presta a actividade e quem dela beneficia, se verifiquem características como: a actividade ser realizada em local pertencente ao beneficiário ou por ele determinado; os equipamentos e instrumentos de trabalho pertencerem ao beneficiário; o prestador observar horas de início e de termo determinadas pelo beneficiário; e o prestador receber uma quantia certa com determinada periodicidade como contrapartida (Artigo 12.º, n.º 1, alíneas a), b), c) e d)).\n\nAlém disso, também está prevista como contraordenação muito grave a prestação de actividade “por forma aparentemente autónoma, em condições características de contrato de trabalho” que possa causar prejuízo ao trabalhador ou ao Estado (Artigo 12.º, n.º 2).",
+        "citations": [
+          "12.º"
+        ],
+        "follow_up": "Há alguma característica referida no Artigo 12.º, n.º 1, alínea e) (direcção/chefia na estrutura orgânica) ou apenas as alíneas a) a d)? Isso pode ajudar a avaliar o peso dos indícios descritos."
+      },
+      "formatted_answer": "Em princípio, sim — pelos elementos que descreve, pode haver presunção de contrato de trabalho. O Artigo 12.º prevê que se presume a existência de contrato de trabalho quando, entre quem presta a actividade e quem dela beneficia, se verifiquem características como: a actividade ser realizada em local pertencente ao beneficiário ou por ele determinado; os equipamentos e instrumentos de trabalho pertencerem ao beneficiário; o prestador observar horas de início e de termo determinadas pelo beneficiário; e o prestador receber uma quantia certa com determinada periodicidade como contrapartida (Artigo 12.º, n.º 1, alíneas a), b), c) e d)).\n\nAlém disso, também está prevista como contraordenação muito grave a prestação de actividade “por forma aparentemente autónoma, em condições características de contrato de trabalho” que possa causar prejuízo ao trabalhador ou ao Estado (Artigo 12.º, n.º 2).\n\nBase legal: Artigo 12.º.\n\nPergunta de seguimento: Há alguma característica referida no Artigo 12.º, n.º 1, alínea e) (direcção/chefia na estrutura orgânica) ou apenas as alíneas a) a d)? Isso pode ajudar a avaliar o peso dos indícios descritos.",
+      "expected_key_info": "Nos termos do Artigo 12.º do Código do Trabalho, presume-se a existência de contrato de trabalho quando se verificam pelo menos duas características como a prestação em local do beneficiário, utilização de equipamentos deste, cumprimento de horário fixado e retribuição periódica certa.",
+      "expected_abstention": false,
+      "abstained": false,
+      "retrieved": [
+        "101.º-e",
+        "11.º",
+        "12.º",
+        "12.º-a",
+        "215.º",
+        "216.º",
+        "217.º",
+        "218.º",
+        "273.º",
+        "275.º",
+        "498.º-a"
+      ],
+      "missing_retrieval": [],
+      "missing_citations": [
+        "11.º"
+      ],
+      "deterministic_pass": false,
+      "judge": {
+        "evidence_quote": "Judge evidence was not an exact quote from the answer or source.",
+        "verdict": "UNKNOWN",
+        "validation_error": "evidence_not_found"
+      },
+      "source_fetched_at": "2026-10-16T20:37:54.821404+00:00",
+      "answer_latency_ms": 4306.05,
+      "judge_latency_ms": 2378.36
+    },
+    {
+      "id": "CT-002",
+      "category": "Plataformas Digitais",
+      "input": "Um estafeta que trabalha via aplicação informática de uma plataforma digital tem a sua retribuição fixada pela aplicação, que também supervisiona as entregas em tempo real e pode desativar a sua conta. Existe presunção de contrato de trabalho?",
+      "prompt_version": "labor_code_v1",
+      "answer": {
+        "status": "answered",
+        "answer": "Sim. Nos termos do Artigo 12.º-A, presume-se a existência de contrato de trabalho quando, entre o prestador de atividade e a plataforma digital, se verifiquem características como: (a) a plataforma fixar a retribuição para o trabalho ou estabelecer limites para a mesma; (c) controlar e supervisionar a prestação da atividade, incluindo em tempo real; e (e) exercer poderes laborais, incluindo o poder disciplinar (como a exclusão de futuras atividades via desativação da conta).",
+        "citations": [
+          "12.º-A"
+        ],
+        "follow_up": null
+      },
+      "formatted_answer": "Sim. Nos termos do Artigo 12.º-A, presume-se a existência de contrato de trabalho quando, entre o prestador de atividade e a plataforma digital, se verifiquem características como: (a) a plataforma fixar a retribuição para o trabalho ou estabelecer limites para a mesma; (c) controlar e supervisionar a prestação da atividade, incluindo em tempo real; e (e) exercer poderes laborais, incluindo o poder disciplinar (como a exclusão de futuras atividades via desativação da conta).\n\nBase legal: Artigo 12.º-A.",
+      "expected_key_info": "O Artigo 12.º-A estabelece a presunção de contrato de trabalho no âmbito de plataforma digital quando a plataforma fixa a retribuição, exerce controlo/supervisão em tempo real ou pode aplicar sanções como a desativação da conta.",
+      "expected_abstention": false,
+      "abstained": false,
+      "retrieved": [
+        "11.º",
+        "12.º",
+        "12.º-a",
+        "140.º",
+        "150.º",
+        "151.º",
+        "153.º",
+        "183.º",
+        "245.º",
+        "55.º",
+        "70.º"
+      ],
+      "missing_retrieval": [],
+      "missing_citations": [],
+      "deterministic_pass": true,
+      "judge": {
+        "evidence_quote": "Judge evidence was not an exact quote from the answer or source.",
+        "verdict": "UNKNOWN",
+        "validation_error": "evidence_not_found"
+      },
+      "source_fetched_at": "2026-10-16T20:37:54.821404+00:00",
+      "answer_latency_ms": 3595.09,
+      "judge_latency_ms": 2585.02
+    },
+    {
+      "id": "CT-003",
+      "category": "Proteção de Dados e Exames Médicos",
+      "input": "A empresa pode exigir a uma candidata a emprego a realização de um teste de gravidez antes da contratação?",
+      "prompt_version": "labor_code_v1",
+      "answer": {
+        "status": "answered",
+        "answer": "Não. O empregador não pode, em circunstância alguma, exigir a candidata a emprego a realização ou apresentação de testes ou exames de gravidez.",
+        "citations": [
+          "19.º"
+        ],
+        "follow_up": null
+      },
+      "formatted_answer": "Não. O empregador não pode, em circunstância alguma, exigir a candidata a emprego a realização ou apresentação de testes ou exames de gravidez.\n\nBase legal: Artigo 19.º.",
+      "expected_key_info": "Nos termos do Artigo 19.º, n.º 2 do Código do Trabalho, o empregador não pode, em circunstância alguma, exigir a candidata a emprego ou a trabalhadora a realização ou apresentação de testes ou exames de gravidez. Constitui contra-ordenação muito grave.",
+      "expected_abstention": false,
+      "abstained": false,
+      "retrieved": [
+        "17.º",
+        "19.º",
+        "24.º",
+        "252.º-a",
+        "30.º",
+        "37.º",
+        "38.º",
+        "380.º",
+        "485.º",
+        "85.º"
+      ],
+      "missing_retrieval": [],
+      "missing_citations": [
+        "17.º"
+      ],
+      "deterministic_pass": false,
+      "judge": {
+        "evidence_quote": "Judge evidence was not an exact quote from the answer or source.",
+        "verdict": "UNKNOWN",
+        "validation_error": "evidence_not_found"
+      },
+      "source_fetched_at": "2026-10-16T20:37:54.821404+00:00",
+      "answer_latency_ms": 2489.37,
+      "judge_latency_ms": 2324.74
+    },
+    {
+      "id": "CT-004",
+      "category": "Meios de Vigilância a Distância",
+      "input": "O empregador pode instalar câmaras de videovigilância focadas diretamente na secretária do trabalhador para controlar a sua produtividade diária?",
+      "prompt_version": "labor_code_v1",
+      "answer": {
+        "status": "answered",
+        "answer": "Em regra, não. O empregador não pode utilizar meios de vigilância a distância no local de trabalho, com equipamento tecnológico, com a finalidade de controlar o desempenho profissional do trabalhador (Artigo 20.º, n.º 1). Só pode ser lícita se tiver por finalidade a proteção e segurança de pessoas e bens ou se exigências particulares inerentes à natureza da atividade o justificarem (Artigo 20.º, n.º 2). Além disso, a utilização de meios de vigilância a distância no local de trabalho está sujeita a autorização da Comissão Nacional de Proteção de Dados e deve ser necessária, adequada e proporcional aos objetivos (Artigo 21.º, n.ºs 1 e 2).",
+        "citations": [
+          "20.º",
+          "21.º"
+        ],
+        "follow_up": null
+      },
+      "formatted_answer": "Em regra, não. O empregador não pode utilizar meios de vigilância a distância no local de trabalho, com equipamento tecnológico, com a finalidade de controlar o desempenho profissional do trabalhador (Artigo 20.º, n.º 1). Só pode ser lícita se tiver por finalidade a proteção e segurança de pessoas e bens ou se exigências particulares inerentes à natureza da atividade o justificarem (Artigo 20.º, n.º 2). Além disso, a utilização de meios de vigilância a distância no local de trabalho está sujeita a autorização da Comissão Nacional de Proteção de Dados e deve ser necessária, adequada e proporcional aos objetivos (Artigo 21.º, n.ºs 1 e 2).\n\nBase legal: Artigo 20.º, Artigo 21.º.",
+      "expected_key_info": "O Artigo 20.º, n.º 1 proíbe a utilização de meios de vigilância a distância no local de trabalho com a finalidade de controlar o desempenho profissional do trabalhador. A utilização só é lícita para proteção de pessoas e bens ou exigências da atividade, mediante autorização e aviso prévio.",
+      "expected_abstention": false,
+      "abstained": false,
+      "retrieved": [
+        "169.º-a",
+        "194.º",
+        "20.º",
+        "21.º",
+        "413.º",
+        "419.º",
+        "420.º",
+        "426.º",
+        "439.º",
+        "461.º"
+      ],
+      "missing_retrieval": [],
+      "missing_citations": [],
+      "deterministic_pass": true,
+      "judge": {
+        "evidence_quote": "Judge evidence was not an exact quote from the answer or source.",
+        "verdict": "UNKNOWN",
+        "validation_error": "evidence_not_found"
+      },
+      "source_fetched_at": "2026-10-16T20:37:54.821404+00:00",
+      "answer_latency_ms": 3267.13,
+      "judge_latency_ms": 2489.44
+    },
+    {
+      "id": "CT-005",
+      "category": "Igualdade e Não Discriminação",
+      "input": "Um trabalhador alega que ganha menos do que um colega que desempenha exatamente as mesmas funções. A quem cabe o ónus da prova em caso de alegação de discriminação?",
+      "prompt_version": "labor_code_v1",
+      "answer": {
+        "status": "answered",
+        "answer": "Cabe ao trabalhador/que alega a discriminação indicar o(s) trabalhador(es) relativamente a quem se considera discriminado; e depois incumbe ao empregador provar que a diferença de tratamento não assenta em qualquer factor de discriminação (ou seja, que não se trata de discriminação). (Artigo 25.º, n.º 5).",
+        "citations": [
+          "25.º"
+        ],
+        "follow_up": null
+      },
+      "formatted_answer": "Cabe ao trabalhador/que alega a discriminação indicar o(s) trabalhador(es) relativamente a quem se considera discriminado; e depois incumbe ao empregador provar que a diferença de tratamento não assenta em qualquer factor de discriminação (ou seja, que não se trata de discriminação). (Artigo 25.º, n.º 5).\n\nBase legal: Artigo 25.º.",
+      "expected_key_info": "De acordo com o Artigo 25.º, n.º 5 do Código do Trabalho, cabe a quem alega discriminação indicar o trabalhador em relação ao qual se considera discriminado, incumbindo ao empregador provar que a diferença de tratamento assenta em critérios objetivos e não em fator de discriminação.",
+      "expected_abstention": false,
+      "abstained": false,
+      "retrieved": [
+        "118.º",
+        "185.º",
+        "23.º",
+        "24.º",
+        "25.º",
+        "26.º",
+        "267.º",
+        "275.º",
+        "31.º",
+        "479.º"
+      ],
+      "missing_retrieval": [],
+      "missing_citations": [
+        "24.º"
+      ],
+      "deterministic_pass": false,
+      "judge": {
+        "evidence_quote": "Judge evidence was not an exact quote from the answer or source.",
+        "verdict": "UNKNOWN",
+        "validation_error": "evidence_not_found"
+      },
+      "source_fetched_at": "2026-10-16T20:37:54.821404+00:00",
+      "answer_latency_ms": 2673.21,
+      "judge_latency_ms": 2612.74
+    },
+    {
+      "id": "CT-006",
+      "category": "Assédio no Trabalho",
+      "input": "O que caracteriza o assédio moral no local de trabalho segundo o Código do Trabalho e quais as consequências jurídicas para a empresa?",
+      "prompt_version": "labor_code_v1",
+      "answer": {
+        "status": "unknown",
+        "answer": "Os excertos fornecidos do Código do Trabalho não incluem a definição/descrição específica de “assédio moral”. Eles apenas trazem regras gerais sobre “assédio” (incluindo assédio sexual) e indicam consequências como direito a indemnização e qualificação como contraordenação muito grave.",
+        "citations": [],
+        "follow_up": "Pretende que eu responda com base apenas nas regras gerais de “assédio” (que constam nos excertos), ou pode fornecer também os artigos/excertos que definem especificamente o “assédio moral”? "
+      },
+      "formatted_answer": "Os excertos fornecidos do Código do Trabalho não incluem a definição/descrição específica de “assédio moral”. Eles apenas trazem regras gerais sobre “assédio” (incluindo assédio sexual) e indicam consequências como direito a indemnização e qualificação como contraordenação muito grave.\n\nPergunta de seguimento: Pretende que eu responda com base apenas nas regras gerais de “assédio” (que constam nos excertos), ou pode fornecer também os artigos/excertos que definem especificamente o “assédio moral”?",
+      "expected_key_info": "O Artigo 29.º define assédio como o comportamento indesejado praticado com o objetivo ou efeito de perturbar/constranger a pessoa, afetar a sua dignidade ou criar um ambiente intimidativo/hostil. Confere direito a indemnização e constitui contra-ordenação muito grave.",
+      "expected_abstention": false,
+      "abstained": true,
+      "retrieved": [
+        "15.º",
+        "169.º-a",
+        "174.º",
+        "193.º",
+        "194.º",
+        "196.º",
+        "29.º",
+        "419.º",
+        "420.º",
+        "461.º"
+      ],
+      "missing_retrieval": [],
+      "missing_citations": [
+        "29.º"
+      ],
+      "deterministic_pass": false,
+      "judge": {
+        "evidence_quote": "Judge evidence was not an exact quote from the answer or source.",
+        "verdict": "UNKNOWN",
+        "validation_error": "evidence_not_found"
+      },
+      "source_fetched_at": "2026-10-16T20:37:54.821404+00:00",
+      "answer_latency_ms": 2824.69,
+      "judge_latency_ms": 2217.21
+    },
+    {
+      "id": "CT-007",
+      "category": "Parentalidade - Risco Clínico",
+      "input": "A trabalhadora grávida que tenha uma prescrição médica indicando risco clínico para a gravidez tem direito a que licença e com que formalidades?",
+      "prompt_version": "labor_code_v1",
+      "answer": {
+        "status": "answered",
+        "answer": "A trabalhadora grávida em situação de risco clínico para a trabalhadora ou para o nascituro, impeditivo do exercício de funções, tem direito a licença pelo período de tempo que for considerado necessário por prescrição médica para prevenir o risco, sem prejuízo da licença parental inicial (Artigo 37.º, n.º 1).\n\nFormalidades: para ter essa licença, a trabalhadora deve informar o empregador e apresentar atestado médico que indique a duração previsível da licença, com antecedência de 10 dias; em caso de urgência comprovada pelo médico, a informação deve ser prestada logo que possível (Artigo 37.º, n.º 2).",
+        "citations": [
+          "37.º"
+        ],
+        "follow_up": null
+      },
+      "formatted_answer": "A trabalhadora grávida em situação de risco clínico para a trabalhadora ou para o nascituro, impeditivo do exercício de funções, tem direito a licença pelo período de tempo que for considerado necessário por prescrição médica para prevenir o risco, sem prejuízo da licença parental inicial (Artigo 37.º, n.º 1).\n\nFormalidades: para ter essa licença, a trabalhadora deve informar o empregador e apresentar atestado médico que indique a duração previsível da licença, com antecedência de 10 dias; em caso de urgência comprovada pelo médico, a informação deve ser prestada logo que possível (Artigo 37.º, n.º 2).\n\nBase legal: Artigo 37.º.",
+      "expected_key_info": "Segundo o Artigo 37.º, a trabalhadora grávida tem direito a licença em situação de risco clínico pelo período considerado necessário por prescrição médica, devendo informar o empregador e apresentar atestado médico.",
+      "expected_abstention": false,
+      "abstained": false,
+      "retrieved": [
+        "101.º-b",
+        "329.º",
+        "337.º",
+        "35.º",
+        "37.º",
+        "37.º-a",
+        "38.º",
+        "44.º",
+        "62.º",
+        "65.º"
+      ],
+      "missing_retrieval": [],
+      "missing_citations": [
+        "35.º"
+      ],
+      "deterministic_pass": false,
+      "judge": {
+        "evidence_quote": "Judge evidence was not an exact quote from the answer or source.",
+        "verdict": "UNKNOWN",
+        "validation_error": "evidence_not_found"
+      },
+      "source_fetched_at": "2026-10-16T20:37:54.821404+00:00",
+      "answer_latency_ms": 3533.49,
+      "judge_latency_ms": 2639.21
+    },
+    {
+      "id": "CT-008",
+      "category": "Parentalidade - Licença Parental da Mãe",
+      "input": "Quantos dias de licença parental inicial são obrigatórios para a mãe gozar imediatamente a seguir ao parto?",
+      "prompt_version": "labor_code_v1",
+      "answer": {
+        "status": "answered",
+        "answer": "É obrigatório a mãe gozar 42 dias consecutivos de licença a seguir ao parto (licença parental inicial).",
+        "citations": [
+          "41.º"
+        ],
+        "follow_up": null
+      },
+      "formatted_answer": "É obrigatório a mãe gozar 42 dias consecutivos de licença a seguir ao parto (licença parental inicial).\n\nBase legal: Artigo 41.º.",
+      "expected_key_info": "Nos termos do Artigo 41.º, n.º 2 do Código do Trabalho, é obrigatório o gozo, por parte da mãe, de 42 dias consecutivos de licença parental inicial a seguir ao parto.",
+      "expected_abstention": false,
+      "abstained": false,
+      "retrieved": [
+        "234.º",
+        "252.º-a",
+        "37.º-a",
+        "39.º",
+        "40.º",
+        "41.º",
+        "42.º",
+        "43.º",
+        "44.º",
+        "51.º"
+      ],
+      "missing_retrieval": [],
+      "missing_citations": [
+        "40.º"
+      ],
+      "deterministic_pass": false,
+      "judge": {
+        "evidence_quote": "Judge evidence was not an exact quote from the answer or source.",
+        "verdict": "UNKNOWN",
+        "validation_error": "evidence_not_found"
+      },
+      "source_fetched_at": "2026-10-16T20:37:54.821404+00:00",
+      "answer_latency_ms": 63199.56,
+      "judge_latency_ms": 2321.99
+    },
+    {
+      "id": "CT-009",
+      "category": "Parentalidade - Licença Parental do Pai",
+      "input": "Qual é a duração da licença parental exclusiva do pai e em que prazos deve ser gozada após o nascimento do filho?",
+      "prompt_version": "labor_code_v1",
+      "answer": {
+        "status": "answered",
+        "answer": "A licença parental exclusiva do pai é obrigatória por 28 dias (seguidos ou em períodos interpolados de, no mínimo, 7 dias). Deve ser gozada nos 42 dias seguintes ao nascimento da criança, incluindo 7 dias gozados de modo consecutivo imediatamente a seguir ao nascimento. Depois desse gozo, o pai ainda tem direito a mais 7 dias de licença (seguidos ou interpolados), desde que sejam gozados em simultâneo com o gozo da licença parental inicial por parte da mãe.",
+        "citations": [
+          "43.º"
+        ],
+        "follow_up": null
+      },
+      "formatted_answer": "A licença parental exclusiva do pai é obrigatória por 28 dias (seguidos ou em períodos interpolados de, no mínimo, 7 dias). Deve ser gozada nos 42 dias seguintes ao nascimento da criança, incluindo 7 dias gozados de modo consecutivo imediatamente a seguir ao nascimento. Depois desse gozo, o pai ainda tem direito a mais 7 dias de licença (seguidos ou interpolados), desde que sejam gozados em simultâneo com o gozo da licença parental inicial por parte da mãe.\n\nBase legal: Artigo 43.º.",
+      "expected_key_info": "O Artigo 43.º, n.º 1 estabelece que é obrigatório o gozo pelo pai de uma licença parental de 28 dias (seguidos ou interpolados de no mínimo 7 dias) nos 42 dias seguintes ao nascimento, sendo 7 gozados consecutivamente logo a seguir ao parto.",
+      "expected_abstention": false,
+      "abstained": false,
+      "retrieved": [
+        "39.º",
+        "40.º",
+        "41.º",
+        "42.º",
+        "43.º",
+        "44.º",
+        "49.º",
+        "51.º",
+        "52.º",
+        "53.º"
+      ],
+      "missing_retrieval": [],
+      "missing_citations": [],
+      "deterministic_pass": true,
+      "judge": {
+        "evidence_quote": "Artigo 43.º — Licença parental exclusiva do pai\n1 - É obrigatório o gozo pelo pai de uma licença parental de 28 dias, seguidos ou em períodos interpolados de no mínimo 7 dias, nos 42 dias seguintes ao nascimento da criança, 7 dos quais gozados de modo consecutivo imediatamente a seguir a este.\n2 - Após o gozo da licença prevista no número anterior, o pai tem ainda direito a sete dias de licença, seguidos ou interpolados, desde que gozados em simultâneo com o gozo da licença parental inicial por parte da mãe.",
+        "verdict": "PASS"
+      },
+      "source_fetched_at": "2026-10-16T20:37:54.821404+00:00",
+      "answer_latency_ms": 2284.5,
+      "judge_latency_ms": 2562.95
+    },
+    {
+      "id": "CT-010",
+      "category": "Dispensas para Aleitação e Amamentação",
+      "input": "Uma mãe que regressa ao trabalho após a licença parental tem direito a dispensa diária para amamentação? Como se organiza o tempo?",
+      "prompt_version": "labor_code_v1",
+      "answer": {
+        "status": "answered",
+        "answer": "Sim. A mãe que amamenta o filho tem direito a dispensa de trabalho para amamentação durante o tempo que durar a amamentação (Artigo 47.º, n.º 1). A dispensa diária deve ser gozada em dois períodos distintos, com duração máxima de uma hora cada (Artigo 47.º, n.º 3).",
+        "citations": [
+          "47.º"
+        ],
+        "follow_up": null
+      },
+      "formatted_answer": "Sim. A mãe que amamenta o filho tem direito a dispensa de trabalho para amamentação durante o tempo que durar a amamentação (Artigo 47.º, n.º 1). A dispensa diária deve ser gozada em dois períodos distintos, com duração máxima de uma hora cada (Artigo 47.º, n.º 3).\n\nBase legal: Artigo 47.º.",
+      "expected_key_info": "O Artigo 47.º garante a dispensa para amamentação durante todo o tempo que esta durar. A dispensa diária é gozada em dois períodos distintos de no máximo uma hora cada, mediante comunicação ao empregador nos termos do Artigo 48.º.",
+      "expected_abstention": false,
+      "abstained": false,
+      "retrieved": [
+        "39.º",
+        "40.º",
+        "41.º",
+        "42.º",
+        "43.º",
+        "47.º",
+        "48.º",
+        "51.º",
+        "58.º",
+        "74.º"
+      ],
+      "missing_retrieval": [],
+      "missing_citations": [
+        "48.º"
+      ],
+      "deterministic_pass": false,
+      "judge": {
+        "evidence_quote": "Judge evidence was not an exact quote from the answer or source.",
+        "verdict": "UNKNOWN",
+        "validation_error": "evidence_not_found"
+      },
+      "source_fetched_at": "2026-10-16T20:37:54.821404+00:00",
+      "answer_latency_ms": 3136.85,
+      "judge_latency_ms": 2463.8
+    },
+    {
+      "id": "CT-011",
+      "category": "Faltas para Assistência a Filho",
+      "input": "Um trabalhador precisa de faltar ao trabalho para prestar assistência inadiável a um filho doente de 8 anos. A quantos dias de falta justificada por ano tem direito?",
+      "prompt_version": "labor_code_v1",
+      "answer": {
+        "status": "answered",
+        "answer": "Tem direito a faltar até 30 dias por ano para prestar assistência inadiável e imprescindível a filho menor de 12 anos (neste caso, 8 anos), em caso de doença ou acidente. (Artigo 49.º, n.º 1).",
+        "citations": [
+          "49.º"
+        ],
+        "follow_up": null
+      },
+      "formatted_answer": "Tem direito a faltar até 30 dias por ano para prestar assistência inadiável e imprescindível a filho menor de 12 anos (neste caso, 8 anos), em caso de doença ou acidente. (Artigo 49.º, n.º 1).\n\nBase legal: Artigo 49.º.",
+      "expected_key_info": "Nos termos do Artigo 49.º, n.º 1, o trabalhador pode faltar justificadamente para prestar assistência inadiável e imprescindível a filho menor de 12 anos até 30 dias por ano (ou durante todo o período de eventual hospitalização).",
+      "expected_abstention": false,
+      "abstained": false,
+      "retrieved": [
+        "249.º",
+        "252.º",
+        "255.º",
+        "49.º",
+        "50.º",
+        "52.º",
+        "53.º",
+        "54.º",
+        "55.º",
+        "65.º"
+      ],
+      "missing_retrieval": [],
+      "missing_citations": [],
+      "deterministic_pass": true,
+      "judge": {
+        "evidence_quote": "Judge evidence was not an exact quote from the answer or source.",
+        "verdict": "UNKNOWN",
+        "validation_error": "evidence_not_found"
+      },
+      "source_fetched_at": "2026-10-16T20:37:54.821404+00:00",
+      "answer_latency_ms": 9442.87,
+      "judge_latency_ms": 2255.13
+    },
+    {
+      "id": "CT-012",
+      "category": "Horário Flexível para Responsabilidades Familiares",
+      "input": "O empregador pode recusar um pedido de horário flexível formulado por um trabalhador com um filho menor de 6 anos sem consultar nenhuma entidade externa?",
+      "prompt_version": "labor_code_v1",
+      "answer": {
+        "status": "answered",
+        "answer": "Depende do fundamento da recusa, mas “sem consultar nenhuma entidade externa” não parece ser suficiente.\n\nO trabalhador com filho menor de 12 anos tem direito a horário flexível (art. 56.º, n.º 1) e o pedido deve ser tratado segundo o procedimento de recusa previsto para horário flexível.\n\nO empregador só pode recusar o pedido com fundamento em exigências imperiosas do funcionamento da empresa, ou na impossibilidade de substituir o trabalhador se este for indispensável (art. 57.º, n.º 2). Além disso, se a intenção de recusa existir, o processo tem de seguir para apreciação por uma entidade competente na área da igualdade de oportunidades entre homens e mulheres (art. 57.º, n.os 5 e 6), e só com decisão judicial é que o empregador pode recusar caso o parecer dessa entidade seja desfavorável (art. 57.º, n.º 7).",
+        "citations": [
+          "56.º",
+          "57.º"
+        ],
+        "follow_up": null
+      },
+      "formatted_answer": "Depende do fundamento da recusa, mas “sem consultar nenhuma entidade externa” não parece ser suficiente.\n\nO trabalhador com filho menor de 12 anos tem direito a horário flexível (art. 56.º, n.º 1) e o pedido deve ser tratado segundo o procedimento de recusa previsto para horário flexível.\n\nO empregador só pode recusar o pedido com fundamento em exigências imperiosas do funcionamento da empresa, ou na impossibilidade de substituir o trabalhador se este for indispensável (art. 57.º, n.º 2). Além disso, se a intenção de recusa existir, o processo tem de seguir para apreciação por uma entidade competente na área da igualdade de oportunidades entre homens e mulheres (art. 57.º, n.os 5 e 6), e só com decisão judicial é que o empregador pode recusar caso o parecer dessa entidade seja desfavorável (art. 57.º, n.º 7).\n\nBase legal: Artigo 56.º, Artigo 57.º.",
+      "expected_key_info": "Não. Nos termos do Artigo 57.º, o empregador só pode recusar com fundamento em exigências imperiosas do funcionamento da empresa ou impossibilidade de substituição, devendo obrigatoriamente remeter o processo para parecer da CITE (Comissão para a Igualdade no Trabalho e no Emprego). Se omitir a submissão, considera-se o pedido aceite.",
+      "expected_abstention": false,
+      "abstained": false,
+      "retrieved": [
+        "101.º-d",
+        "101.º-e",
+        "49.º",
+        "52.º",
+        "53.º",
+        "54.º",
+        "56.º",
+        "57.º",
+        "68.º",
+        "69.º"
+      ],
+      "missing_retrieval": [],
+      "missing_citations": [],
+      "deterministic_pass": true,
+      "judge": {
+        "evidence_quote": "Judge evidence was not an exact quote from the answer or source.",
+        "verdict": "UNKNOWN",
+        "validation_error": "evidence_not_found"
+      },
+      "source_fetched_at": "2026-10-16T20:37:54.821404+00:00",
+      "answer_latency_ms": 3882.89,
+      "judge_latency_ms": 2702.95
+    },
+    {
+      "id": "CT-013",
+      "category": "Trabalho de Menores",
+      "input": "Qual é a idade mínima legal para admissão ao trabalho em Portugal e quais os requisitos de escolaridade?",
+      "prompt_version": "labor_code_v1",
+      "answer": {
+        "status": "answered",
+        "answer": "A idade mínima legal para admissão ao trabalho é de 16 anos (Artigo 68.º, n.º 2). Além da idade mínima, o menor só pode ser admitido a prestar trabalho se tiver concluído a escolaridade obrigatória ou estiver matriculado e a frequentar o nível secundário de educação (Artigo 68.º, n.º 1). Se o menor tiver menos de 16 anos, pode prestar apenas trabalhos leves (Artigo 68.º, n.º 3), e, quando não possua qualificação profissional (por exemplo, concluído apenas a escolaridade obrigatória ou matriculado no secundário, mas sem qualificação profissional), a admissão depende de frequência de modalidade de educação ou formação que confira, consoante o caso, a escolaridade obrigatória, qualificação profissional, ou ambas (Artigo 69.º, n.º 1).",
+        "citations": [
+          "68.º",
+          "69.º"
+        ],
+        "follow_up": null
+      },
+      "formatted_answer": "A idade mínima legal para admissão ao trabalho é de 16 anos (Artigo 68.º, n.º 2). Além da idade mínima, o menor só pode ser admitido a prestar trabalho se tiver concluído a escolaridade obrigatória ou estiver matriculado e a frequentar o nível secundário de educação (Artigo 68.º, n.º 1). Se o menor tiver menos de 16 anos, pode prestar apenas trabalhos leves (Artigo 68.º, n.º 3), e, quando não possua qualificação profissional (por exemplo, concluído apenas a escolaridade obrigatória ou matriculado no secundário, mas sem qualificação profissional), a admissão depende de frequência de modalidade de educação ou formação que confira, consoante o caso, a escolaridade obrigatória, qualificação profissional, ou ambas (Artigo 69.º, n.º 1).\n\nBase legal: Artigo 68.º, Artigo 69.º.",
+      "expected_key_info": "Segundo o Artigo 68.º, a idade mínima de admissão é de 16 anos, exigindo-se que o menor tenha concluído a escolaridade obrigatória ou esteja matriculado e a frequentar o ensino secundário.",
+      "expected_abstention": false,
+      "abstained": false,
+      "retrieved": [
+        "145.º",
+        "152.º",
+        "273.º",
+        "275.º",
+        "325.º",
+        "348.º",
+        "368.º",
+        "375.º",
+        "68.º",
+        "69.º"
+      ],
+      "missing_retrieval": [],
+      "missing_citations": [],
+      "deterministic_pass": true,
+      "judge": {
+        "evidence_quote": "Judge evidence was not an exact quote from the answer or source.",
+        "verdict": "UNKNOWN",
+        "validation_error": "evidence_not_found"
+      },
+      "source_fetched_at": "2026-10-16T20:37:54.821404+00:00",
+      "answer_latency_ms": 3991.27,
+      "judge_latency_ms": 62357.39
+    },
+    {
+      "id": "CT-014",
+      "category": "Trabalhador-Estudante",
+      "input": "Um trabalhador-estudante tem direito a faltar nos dias de exames e provas de avaliação? Quais as condições?",
+      "prompt_version": "labor_code_v1",
+      "answer": {
+        "status": "answered",
+        "answer": "Sim. O trabalhador-estudante pode faltar justificadamente por motivo de prestação de prova de avaliação, mas dentro das condições legais. Em regra, pode faltar: (i) no dia da prova e no imediatamente anterior; (ii) quando houver provas em dias consecutivos ou mais do que uma prova no mesmo dia, contam-se os “dias imediatamente anteriores” em número igual ao de provas a prestar; e (iii) esses dias podem incluir dias de descanso semanal e feriados (Artigo 91.º, n.º 1, als. a) a c)). As faltas ao abrigo deste regime não podem exceder 4 dias por disciplina em cada ano letivo e só podem ser usadas em 2 anos letivos relativamente a cada disciplina (Artigo 91.º, n.os 1, al. d) e 2). \n\nSe o curso estiver organizado em regime ECTS, pode, em alternativa, optar por cumular os dias anteriores ao da prova num máximo de 3 dias (seguidos ou interpolados, ou em termos de meios-dias), mas apenas dentro das condições previstas (Artigo 91.º, n.os 3 e 5). \n\nAlém disso, também se consideram justificadas faltas na estrita medida das deslocações necessárias para prestar provas de avaliação, sendo retribuídas até 10 faltas por ano letivo, independentemente do número de disciplinas (Artigo 91.º, n.º 6). A lei considera “prova de avaliação” o exame ou outra prova (escrita ou oral) e também a apresentação de trabalho, quando determine aproveitamento escolar (Artigo 91.º, n.º 7).",
+        "citations": [
+          "91.º"
+        ],
+        "follow_up": null
+      },
+      "formatted_answer": "Sim. O trabalhador-estudante pode faltar justificadamente por motivo de prestação de prova de avaliação, mas dentro das condições legais. Em regra, pode faltar: (i) no dia da prova e no imediatamente anterior; (ii) quando houver provas em dias consecutivos ou mais do que uma prova no mesmo dia, contam-se os “dias imediatamente anteriores” em número igual ao de provas a prestar; e (iii) esses dias podem incluir dias de descanso semanal e feriados (Artigo 91.º, n.º 1, als. a) a c)). As faltas ao abrigo deste regime não podem exceder 4 dias por disciplina em cada ano letivo e só podem ser usadas em 2 anos letivos relativamente a cada disciplina (Artigo 91.º, n.os 1, al. d) e 2). \n\nSe o curso estiver organizado em regime ECTS, pode, em alternativa, optar por cumular os dias anteriores ao da prova num máximo de 3 dias (seguidos ou interpolados, ou em termos de meios-dias), mas apenas dentro das condições previstas (Artigo 91.º, n.os 3 e 5). \n\nAlém disso, também se consideram justificadas faltas na estrita medida das deslocações necessárias para prestar provas de avaliação, sendo retribuídas até 10 faltas por ano letivo, independentemente do número de disciplinas (Artigo 91.º, n.º 6). A lei considera “prova de avaliação” o exame ou outra prova (escrita ou oral) e também a apresentação de trabalho, quando determine aproveitamento escolar (Artigo 91.º, n.º 7).\n\nBase legal: Artigo 91.º.",
+      "expected_key_info": "Nos termos do Artigo 91.º, o trabalhador-estudante pode faltar justificadamente no dia da prova de avaliação e no dia imediatamente anterior (até ao limite de 4 dias por disciplina em cada ano letivo), mantendo o direito à retribuição.",
+      "expected_abstention": false,
+      "abstained": false,
+      "retrieved": [
+        "185.º",
+        "19.º",
+        "7.º",
+        "89.º",
+        "89.º-a",
+        "90.º",
+        "91.º",
+        "93.º",
+        "94.º",
+        "96.º"
+      ],
+      "missing_retrieval": [],
+      "missing_citations": [
+        "89.º"
+      ],
+      "deterministic_pass": false,
+      "judge": {
+        "evidence_quote": "Judge evidence was not an exact quote from the answer or source.",
+        "verdict": "UNKNOWN",
+        "validation_error": "evidence_not_found"
+      },
+      "source_fetched_at": "2026-10-16T20:37:54.821404+00:00",
+      "answer_latency_ms": 4090.67,
+      "judge_latency_ms": 2334.97
+    },
+    {
+      "id": "CT-015",
+      "category": "Contrato de Trabalho a Termo",
+      "input": "Em que situações é admissível a celebração de um contrato de trabalho a termo resolutivo segundo o Código do Trabalho?",
+      "prompt_version": "labor_code_v1",
+      "answer": {
+        "status": "answered",
+        "answer": "Segundo o Código do Trabalho, o contrato de trabalho a termo resolutivo só pode ser celebrado para necessidades temporárias, objetivamente definidas pela entidade empregadora, e apenas pelo período estritamente necessário (Artigo 140.º, n.º 1).",
+        "citations": [
+          "140.º"
+        ],
+        "follow_up": "Quais são as categorias específicas de necessidades temporárias que o Artigo 140.º prevê como admissíveis (ex.: substituição de trabalhador ausente, acréscimo excecional de atividade, tarefa/obra ocasional, etc.)?"
+      },
+      "formatted_answer": "Segundo o Código do Trabalho, o contrato de trabalho a termo resolutivo só pode ser celebrado para necessidades temporárias, objetivamente definidas pela entidade empregadora, e apenas pelo período estritamente necessário (Artigo 140.º, n.º 1).\n\nBase legal: Artigo 140.º.\n\nPergunta de seguimento: Quais são as categorias específicas de necessidades temporárias que o Artigo 140.º prevê como admissíveis (ex.: substituição de trabalhador ausente, acréscimo excecional de atividade, tarefa/obra ocasional, etc.)?",
+      "expected_key_info": "O Artigo 140.º estabelece que o contrato a termo só é admissível para a satisfação de necessidades temporárias da empresa e pelo período estritamente necessário a esse fim (ex.: substituição direta de trabalhador ausente, acréscimo excecional de atividade, execução de obra ou tarefa determinada).",
+      "expected_abstention": false,
+      "abstained": false,
+      "retrieved": [
+        "139.º",
+        "140.º",
+        "141.º",
+        "143.º",
+        "144.º",
+        "147.º",
+        "148.º",
+        "149.º",
+        "151.º",
+        "345.º"
+      ],
+      "missing_retrieval": [],
+      "missing_citations": [],
+      "deterministic_pass": true,
+      "judge": {
+        "evidence_quote": "Judge evidence was not an exact quote from the answer or source.",
+        "verdict": "UNKNOWN",
+        "validation_error": "evidence_not_found"
+      },
+      "source_fetched_at": "2026-10-16T20:37:54.821404+00:00",
+      "answer_latency_ms": 2806.4,
+      "judge_latency_ms": 1935.53
+    },
+    {
+      "id": "CT-016",
+      "category": "Teletrabalho",
+      "input": "Quem deve fornecer e custear os equipamentos e sistemas informáticos necessários para a prestação de trabalho em regime de teletrabalho?",
+      "prompt_version": "labor_code_v1",
+      "answer": {
+        "status": "answered",
+        "answer": "O empregador é responsável por disponibilizar os equipamentos e sistemas necessários à realização do trabalho e à interação trabalhador-empregador (Artigo 168.º, n.º 1). Além disso, o empregador deve garantir ou custear as ações de manutenção e de correção de avarias do equipamento e dos sistemas utilizados no teletrabalho (Artigo 169.º-B, n.º 1, alínea d), nos termos do Artigo 168.º, n.º 2).",
+        "citations": [
+          "168.º",
+          "169.º-B"
+        ],
+        "follow_up": null
+      },
+      "formatted_answer": "O empregador é responsável por disponibilizar os equipamentos e sistemas necessários à realização do trabalho e à interação trabalhador-empregador (Artigo 168.º, n.º 1). Além disso, o empregador deve garantir ou custear as ações de manutenção e de correção de avarias do equipamento e dos sistemas utilizados no teletrabalho (Artigo 169.º-B, n.º 1, alínea d), nos termos do Artigo 168.º, n.º 2).\n\nBase legal: Artigo 168.º, Artigo 169.º-B.",
+      "expected_key_info": "De acordo com o Artigo 168.º do Código do Trabalho, o empregador é responsável pela disponibilização ao trabalhador dos equipamentos e sistemas necessários à realização do teletrabalho, bem como pela compensação de despesas adicionais acordadas ou comprovadas.",
+      "expected_abstention": false,
+      "abstained": false,
+      "retrieved": [
+        "101.º-e",
+        "165.º",
+        "166.º",
+        "166.º-a",
+        "167.º",
+        "168.º",
+        "169.º-b",
+        "170.º",
+        "291.º",
+        "60.º"
+      ],
+      "missing_retrieval": [],
+      "missing_citations": [
+        "165.º"
+      ],
+      "deterministic_pass": false,
+      "judge": {
+        "evidence_quote": "Judge evidence was not an exact quote from the answer or source.",
+        "verdict": "UNKNOWN",
+        "validation_error": "evidence_not_found"
+      },
+      "source_fetched_at": "2026-10-16T20:37:54.821404+00:00",
+      "answer_latency_ms": 2920.38,
+      "judge_latency_ms": 2412.77
+    },
+    {
+      "id": "CT-017",
+      "category": "Fora do Âmbito - Fiscalidade",
+      "input": "Qual é a taxa de retenção na fonte de IRS aplicável aos dividendos distribuídos por uma sociedade por quotas a sócios residentes em Portugal?",
+      "prompt_version": "labor_code_v1",
+      "answer": {
+        "status": "unknown",
+        "answer": "Não consigo determinar a taxa de retenção na fonte de IRS aplicável aos dividendos a partir dos excertos do Código do Trabalho fornecidos. Os artigos recuperados referem-se a matérias como quotas sindicais, responsabilidade solidária e informação ao trabalhador, não a retenção de IRS em dividendos.",
+        "citations": [],
+        "follow_up": null
+      },
+      "formatted_answer": "Não consigo determinar a taxa de retenção na fonte de IRS aplicável aos dividendos a partir dos excertos do Código do Trabalho fornecidos. Os artigos recuperados referem-se a matérias como quotas sindicais, responsabilidade solidária e informação ao trabalhador, não a retenção de IRS em dividendos.",
+      "expected_key_info": "A aplicação deve informar que a questão diz respeito ao Código do IRS / Direito Fiscal, estando fora da sua base de conhecimento centrada no Código do Trabalho.",
+      "expected_abstention": true,
+      "abstained": true,
+      "retrieved": [
+        "106.º",
+        "182.º",
+        "313.º",
+        "323.º",
+        "334.º",
+        "457.º",
+        "458.º",
+        "459.º",
+        "480.º",
+        "497.º"
+      ],
+      "missing_retrieval": [],
+      "missing_citations": [],
+      "deterministic_pass": true,
+      "judge": {
+        "evidence_quote": "Judge evidence was not an exact quote from the answer or source.",
+        "verdict": "UNKNOWN",
+        "validation_error": "evidence_not_found"
+      },
+      "source_fetched_at": "2026-10-16T20:37:54.821404+00:00",
+      "answer_latency_ms": 2376.88,
+      "judge_latency_ms": 2743.06
+    },
+    {
+      "id": "CT-018",
+      "category": "Fora do Âmbito - Licenciamento Comercial",
+      "input": "Quais são os documentos e taxas municipais necessários para obter a licença de utilização comercial e alvará de um restaurante?",
+      "prompt_version": "labor_code_v1",
+      "answer": {
+        "status": "unknown",
+        "answer": "Não consigo responder com base nos excertos fornecidos. As passagens disponíveis referem-se, por exemplo, a documentos a entregar pelo empregador ao trabalhador ao cessar o contrato (art. 341.º) e a notificações para exibição/entrega de documentos ao abrigo de inspeção (art. 552.º), mas não tratam de licença de utilização comercial, alvará de restaurante ou de taxas municipais.",
+        "citations": [],
+        "follow_up": "Pretende que eu verifique se nos excertos fornecidos existe algum artigo sobre licenças de utilização/alvarás municipais e taxas? Se tiver outros artigos/um excerto específico sobre “licença de utilização”, “alvará” ou “taxas municipais”, envie-os."
+      },
+      "formatted_answer": "Não consigo responder com base nos excertos fornecidos. As passagens disponíveis referem-se, por exemplo, a documentos a entregar pelo empregador ao trabalhador ao cessar o contrato (art. 341.º) e a notificações para exibição/entrega de documentos ao abrigo de inspeção (art. 552.º), mas não tratam de licença de utilização comercial, alvará de restaurante ou de taxas municipais.\n\nPergunta de seguimento: Pretende que eu verifique se nos excertos fornecidos existe algum artigo sobre licenças de utilização/alvarás municipais e taxas? Se tiver outros artigos/um excerto específico sobre “licença de utilização”, “alvará” ou “taxas municipais”, envie-os.",
+      "expected_key_info": "O sistema deve abster-se e indicar que o licenciamento de estabelecimentos comerciais pertence ao Direito Administrativo / Regulamento Municipal, fora do âmbito do Código do Trabalho.",
+      "expected_abstention": true,
+      "abstained": true,
+      "retrieved": [
+        "101.º-b",
+        "175.º",
+        "177.º",
+        "178.º",
+        "21.º",
+        "341.º",
+        "40.º",
+        "43.º",
+        "552.º",
+        "82.º"
+      ],
+      "missing_retrieval": [],
+      "missing_citations": [],
+      "deterministic_pass": true,
+      "judge": {
+        "evidence_quote": "Judge evidence was not an exact quote from the answer or source.",
+        "verdict": "UNKNOWN",
+        "validation_error": "evidence_not_found"
+      },
+      "source_fetched_at": "2026-10-16T20:37:54.821404+00:00",
+      "answer_latency_ms": 3189.67,
+      "judge_latency_ms": 2755.42
+    },
+    {
+      "id": "CT-019",
+      "category": "Fora do Âmbito - Processo Penal",
+      "input": "Qual é o prazo legal para interpor recurso de uma sentença condenatória proferida em processo crime no Tribunal Judicial?",
+      "prompt_version": "labor_code_v1",
+      "answer": {
+        "status": "unknown",
+        "answer": "Não consigo responder com base nos excertos fornecidos. Os artigos recuperados referem-se a apreciação judicial de despedimento (incluindo prazos de impugnação), e a crimes/contraordenações, mas não contêm regra sobre o prazo para interpor recurso de uma sentença condenatória em processo crime no Tribunal Judicial.",
+        "citations": [],
+        "follow_up": "Pretende-se o prazo para recurso no âmbito do processo crime (prazos do Código de Processo Penal)? Se possível, indique o artigo/trecho do Código do Trabalho ou outro diploma que foi fornecido na sua pesquisa, para eu poder localizar a regra aplicável."
+      },
+      "formatted_answer": "Não consigo responder com base nos excertos fornecidos. Os artigos recuperados referem-se a apreciação judicial de despedimento (incluindo prazos de impugnação), e a crimes/contraordenações, mas não contêm regra sobre o prazo para interpor recurso de uma sentença condenatória em processo crime no Tribunal Judicial.\n\nPergunta de seguimento: Pretende-se o prazo para recurso no âmbito do processo crime (prazos do Código de Processo Penal)? Se possível, indique o artigo/trecho do Código do Trabalho ou outro diploma que foi fornecido na sua pesquisa, para eu poder localizar a regra aplicável.",
+      "expected_key_info": "A aplicação deve indicar que a dúvida se refere ao Código de Processo Penal, devendo abster-se de responder por estar fora do âmbito da legislação laboral.",
+      "expected_abstention": true,
+      "abstained": true,
+      "retrieved": [
+        "272.º",
+        "292.º",
+        "338.º-a",
+        "387.º",
+        "388.º",
+        "407.º",
+        "413.º",
+        "459.º",
+        "82.º",
+        "83.º"
+      ],
+      "missing_retrieval": [],
+      "missing_citations": [],
+      "deterministic_pass": true,
+      "judge": {
+        "evidence_quote": "Judge evidence was not an exact quote from the answer or source.",
+        "verdict": "UNKNOWN",
+        "validation_error": "evidence_not_found"
+      },
+      "source_fetched_at": "2026-10-16T20:37:54.821404+00:00",
+      "answer_latency_ms": 2862.36,
+      "judge_latency_ms": 1605.86
+    },
+    {
+      "id": "CT-020",
+      "category": "Fora do Âmbito - Direito Tributário / IVA",
+      "input": "Como funciona a isenção de IVA nas transmissões intracomunitárias de bens e que declaração recapitulative deve ser entregue à Autoridade Tributária?",
+      "prompt_version": "labor_code_v1",
+      "answer": {
+        "status": "unknown",
+        "answer": "Não consigo responder com base nos excertos fornecidos. Os trechos disponíveis tratam de isenção de horário de trabalho e outros temas do Código do Trabalho, mas não trazem regras sobre isenção de IVA em transmissões intracomunitárias nem sobre declaração recapitulativa para a Autoridade Tributária.",
+        "citations": [],
+        "follow_up": "Pretende que eu responda ao nível do Código do Trabalho (por ex., “isenção” no contexto de horário) ou está a perguntar especificamente sobre legislação fiscal/IVA e a declaração recapitulativa (VIES/AT)? Se for sobre IVA, pode fornecer os excertos legais relevantes dessa matéria?"
+      },
+      "formatted_answer": "Não consigo responder com base nos excertos fornecidos. Os trechos disponíveis tratam de isenção de horário de trabalho e outros temas do Código do Trabalho, mas não trazem regras sobre isenção de IVA em transmissões intracomunitárias nem sobre declaração recapitulativa para a Autoridade Tributária.\n\nPergunta de seguimento: Pretende que eu responda ao nível do Código do Trabalho (por ex., “isenção” no contexto de horário) ou está a perguntar especificamente sobre legislação fiscal/IVA e a declaração recapitulativa (VIES/AT)? Se for sobre IVA, pode fornecer os excertos legais relevantes dessa matéria?",
+      "expected_key_info": "O sistema deve informar que a questão trata do Código do IVA e Regulamentação Tributária, estando fora do seu escopo exclusivo sobre o Código do Trabalho.",
+      "expected_abstention": true,
+      "abstained": true,
+      "retrieved": [
+        "191.º",
+        "218.º",
+        "219.º",
+        "254.º",
+        "265.º",
+        "395.º",
+        "40.º",
+        "453.º",
+        "456.º",
+        "458.º"
+      ],
+      "missing_retrieval": [],
+      "missing_citations": [],
+      "deterministic_pass": true,
+      "judge": {
+        "evidence_quote": "Judge evidence was not an exact quote from the answer or source.",
+        "verdict": "UNKNOWN",
+        "validation_error": "evidence_not_found"
+      },
+      "source_fetched_at": "2026-10-16T20:37:54.821404+00:00",
+      "answer_latency_ms": 3268.29,
+      "judge_latency_ms": 2557.09
+    }
+  ],
+  "deterministic_passed": 11,
+  "judge_verdicts": {
+    "PASS": 1,
+    "FAIL": 0,
+    "UNKNOWN": 19
+  },
+  "total": 20,
+  "answered": 20,
+  "completed": 20
+}

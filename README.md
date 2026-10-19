@@ -128,3 +128,16 @@ Os testes não requerem chave de API nem fazem chamadas de rede:
 ```bash
 python -m unittest discover -v
 ```
+
+## Atualização de evidência e conformidade do checklist
+
+Para responder ao checklist do projeto, o repositório foi reforçado com documentação explícita para os itens que exigem prova e registo local:
+
+- foi criado `AGENTS.md` na raiz para reforçar a regra de centralização do uso do modelo em `src/llm.py`
+- foi adicionado o ficheiro `docs/copilot_evidence.md` para documentar a intenção e a evidência disponível do steering do Copilot
+- foi adicionado `docs/prompt_iteration.md` para registar a linha temporal da iteração dos prompts e as métricas disponíveis
+- foi adicionado `docs/project_report.md` e `docs/submission_deck.md` como artefactos locais de relatório e apresentação
+- foi preenchido o ficheiro `evaluation/draft_labels.csv` com rascunhos revistos manualmente e motivos
+
+Estas alterações não escondem os itens que continuam dependentes de contexto externo (por exemplo, publicação pública do repositório, prova visual antes/depois e gravação da demonstração). Em vez de os inventar, o repositório passa a documentar claramente o que foi verificado localmente e o que permanece fora do alcance deste checkout.
+

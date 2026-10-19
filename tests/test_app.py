@@ -116,12 +116,12 @@ class AppTests(unittest.TestCase):
         )
         self.assertIn("Texto do artigo.", ask.call_args_list[1].kwargs["system"])
         self.assertIn(
-            "Portuguese Labour Code Q&A — v4",
+            "Portuguese Labour Code Q&A — v5",
             ask.call_args_list[1].kwargs["system"],
         )
         normalized_prompt = " ".join(ask.call_args_list[1].kwargs["system"].split())
         self.assertIn(
-            "Write the answer and any follow-up question in Portuguese.",
+            "Write the answer in Portuguese.",
             normalized_prompt,
         )
 
@@ -135,7 +135,7 @@ class AppTests(unittest.TestCase):
         article = {"number": "12.º", "title": "Teste", "text": "Texto do artigo."}
         with (
             patch("app.load_labor_code", return_value=snapshot),
-            patch("app.retrieve_articles", return_value=[article]),
+            patch("app.retrieve_articles", return_value=[article]) as retrieve,
             patch(
                 "app.ask",
                 side_effect=[
@@ -165,6 +165,7 @@ class AppTests(unittest.TestCase):
 
         self.assertEqual(answer, "Resposta\n\nBase legal: Artigo 12.º.")
         self.assertEqual(ask.call_count, 3)
+        retrieve.assert_called_once_with("pergunta", snapshot["articles"])
         self.assertIn(
             "If the original question is in Portuguese",
             ask.call_args_list[2].kwargs["system"],
@@ -242,6 +243,19 @@ class AppTests(unittest.TestCase):
                 "en",
             )
 
+    def test_format_answer_trims_trailing_whitespace(self):
+        from app import _format_answer_text
+
+        result = {
+            "status": "answered",
+            "answer": "Resposta com espaço final   ",
+            "citations": ["12.º"],
+            "follow_up": "Pergunta final   ",
+        }
+        answer = _format_answer_text(result)
+        self.assertFalse(answer.endswith(" "))
+        self.assertNotIn("Pergunta final", answer)
+
     def test_portuguese_interface_returns_portuguese_answer_and_sources_without_translation(self):
         result = {
             "status": "answered",
@@ -285,14 +299,14 @@ class AppTests(unittest.TestCase):
 
         self.assertEqual(parse_answer(json.dumps(response), [])["status"], "unknown")
 
-    def test_empty_follow_up_is_normalized_to_null(self):
+    def test_follow_up_is_always_normalized_to_null(self):
         from app import parse_answer
 
         response = {
             "status": "answered",
             "answer": "Resposta",
             "citations": ["12.º"],
-            "follow_up": " ",
+            "follow_up": "Quer fornecer mais detalhes?",
         }
 
         result = parse_answer(

@@ -13,7 +13,8 @@ from llm import ask
 from labor_code import load_labor_code
 
 GOLDEN_SET_PATH = ROOT / "evaluation" / "golden_set.json"
-JUDGE_PROMPT_PATH = ROOT / "evaluation" / "judge_prompt.md"
+JUDGE_PROMPT_VERSION = "judge_prompt_v2"
+JUDGE_PROMPT_PATH = ROOT / "evaluation" / f"{JUDGE_PROMPT_VERSION}.md"
 RESULTS_PATH = ROOT / "evaluation" / "golden_results.json"
 
 
@@ -75,6 +76,7 @@ def _save_report(snapshot: dict, results: list[dict], total: int) -> None:
         json.dumps(
             {
                 "prompt_version": PROMPT_VERSION,
+                "judge_prompt_version": JUDGE_PROMPT_VERSION,
                 "source_url": snapshot["source_url"],
                 "source_fetched_at": snapshot["fetched_at"],
                 "results": results,
@@ -107,11 +109,13 @@ def _load_existing_results(snapshot: dict, cases: list[dict]) -> dict[str, dict]
     report = json.loads(RESULTS_PATH.read_text(encoding="utf-8"))
     if (
         report.get("prompt_version") != PROMPT_VERSION
+        or report.get("judge_prompt_version") != JUDGE_PROMPT_VERSION
         or report.get("source_url") != snapshot["source_url"]
         or report.get("source_fetched_at") != snapshot["fetched_at"]
     ):
         raise ValueError(
-            "Existing evaluation report uses a different prompt or source snapshot. "
+            "Existing evaluation report uses a different answer prompt, judge prompt, "
+            "or source snapshot. "
             "Move the report aside before starting a new evaluation."
         )
     expected_cases = {case["id"]: case for case in cases}
@@ -199,7 +203,9 @@ def evaluate() -> list[dict]:
             formatted_answer = result["formatted_answer"]
 
         judge_started = time.perf_counter()
-        judgment = _judge_answer(case["input"], formatted_answer, retrieved)
+        judgment = _judge_answer(
+            case["input"], result["answer"]["answer"], retrieved
+        )
         result["judge"] = judgment
         result["judge_latency_ms"] = round(
             (time.perf_counter() - judge_started) * 1000, 2

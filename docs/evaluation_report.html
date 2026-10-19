@@ -1,0 +1,253 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Golden-set evaluation report for the Friendly Labor Code assistant.">
+  <title>Friendly Labor Code | Evaluation Report</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --ink: #142b35;
+      --muted: #53666d;
+      --paper: #f5f3ed;
+      --white: #fffefa;
+      --line: #d7ddd8;
+      --teal: #087e78;
+      --teal-pale: #dcefeb;
+      --blue: #315d93;
+      --blue-pale: #e5edf8;
+      --amber: #bd6a22;
+      --amber-pale: #fbebd8;
+      --red: #ad4540;
+      --red-pale: #f7e5e1;
+      --green: #347451;
+      --green-pale: #e2efe4;
+      --serif: Georgia, "Times New Roman", serif;
+      --sans: "Aptos", "Segoe UI", sans-serif;
+    }
+    * { box-sizing: border-box; }
+    html { background: var(--paper); color: var(--ink); font-family: var(--sans); }
+    body { margin: 0; font-size: 15px; line-height: 1.52; }
+    a { color: #155d73; text-decoration-thickness: 1px; text-underline-offset: 3px; }
+    a:hover { color: var(--teal); }
+    .skip { position: absolute; left: -10000px; top: auto; }
+    .skip:focus { left: 1rem; top: 1rem; z-index: 5; padding: .6rem; background: var(--white); }
+    .masthead { padding: 18px max(24px, calc((100vw - 1100px) / 2)); color: #f7fbf8; background: var(--ink); }
+    .masthead-inner { display: flex; justify-content: space-between; align-items: center; gap: 20px; }
+    .brand { font-size: 13px; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; }
+    .masthead a { color: #bce9de; }
+    main { max-width: 1100px; margin: auto; padding: 32px 24px 60px; }
+    .hero { display: grid; grid-template-columns: minmax(0, 1.5fr) minmax(250px, .8fr); align-items: end; gap: 38px; padding: 30px 0 28px; border-bottom: 1px solid var(--line); }
+    .eyebrow { margin: 0 0 8px; color: var(--teal); font-size: 12px; font-weight: 800; letter-spacing: .09em; text-transform: uppercase; }
+    h1, h2, h3, p { margin-top: 0; }
+    h1 { max-width: 740px; margin-bottom: 14px; font: 500 clamp(34px, 5vw, 58px)/1.02 var(--serif); }
+    .dek { max-width: 690px; margin: 0; color: var(--muted); font-size: 17px; }
+    .snapshot { padding: 18px 20px; border-left: 4px solid var(--amber); background: var(--white); }
+    .snapshot strong { display: block; margin-bottom: 6px; font-size: 12px; text-transform: uppercase; }
+    .snapshot p { margin: 0; font-size: 13px; overflow-wrap: anywhere; }
+    .metrics { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 12px; margin: 22px 0 38px; }
+    .metric { min-height: 124px; padding: 16px 18px; border-top: 3px solid var(--teal); background: var(--white); }
+    .metric:nth-child(2) { border-color: var(--blue); }
+    .metric:nth-child(3) { border-color: var(--amber); }
+    .metric:nth-child(4) { border-color: var(--red); }
+    .metric-label { display: block; color: var(--muted); font-size: 12px; font-weight: 700; text-transform: uppercase; }
+    .metric-value { display: block; margin: 5px 0 2px; font: 600 32px/1.05 var(--serif); }
+    .metric-note { color: var(--muted); font-size: 12px; }
+    section { margin: 0 0 38px; }
+    .section-head { display: flex; align-items: baseline; justify-content: space-between; gap: 20px; margin-bottom: 14px; padding-bottom: 9px; border-bottom: 1px solid var(--line); }
+    h2 { margin: 0; font: 500 28px/1.1 var(--serif); }
+    h3 { margin-bottom: 8px; font-size: 16px; }
+    .section-tag { color: var(--muted); font-size: 12px; }
+    .summary { display: grid; grid-template-columns: 1.2fr .8fr; gap: 18px; }
+    .summary-copy { padding: 20px 22px; background: var(--white); }
+    .callout { padding: 20px 22px; border-left: 4px solid var(--amber); background: var(--amber-pale); }
+    .callout p:last-child, .summary-copy p:last-child { margin-bottom: 0; }
+    .table-wrap { overflow-x: auto; background: var(--white); }
+    table { width: 100%; border-collapse: collapse; font-size: 13px; }
+    th, td { padding: 11px 13px; border-bottom: 1px solid var(--line); text-align: left; vertical-align: top; }
+    th { color: var(--muted); font-size: 11px; letter-spacing: .04em; text-transform: uppercase; }
+    tr:last-child td { border-bottom: 0; }
+    td strong { white-space: nowrap; }
+    .bar-row { display: grid; grid-template-columns: minmax(205px, 1.05fr) minmax(150px, 1.5fr) 75px; gap: 12px; align-items: center; margin: 13px 0; font-size: 13px; }
+    .bar-track { height: 10px; overflow: hidden; background: #e2e7e1; }
+    .bar-fill { width: var(--value); height: 100%; background: var(--teal); }
+    .bar-row:nth-child(3) .bar-fill { background: var(--blue); }
+    .bar-row:nth-child(4) .bar-fill { background: var(--amber); }
+    .bar-row:nth-child(5) .bar-fill { background: var(--red); }
+    .bar-value { text-align: right; font-weight: 700; }
+    .chart { padding: 12px 18px 16px; background: var(--white); }
+    .note { color: var(--muted); font-size: 12px; }
+    .failure { border-left: 3px solid var(--red); }
+    .pass { color: var(--green); font-weight: 700; }
+    .fail { color: var(--red); font-weight: 700; }
+    .unknown { color: var(--amber); font-weight: 700; }
+    .iteration { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+    .iteration article { padding: 18px 20px; background: var(--white); }
+    .iteration .kept { border-top: 3px solid var(--teal); }
+    .iteration .dropped { border-top: 3px solid var(--red); }
+    .links { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 9px 22px; padding: 18px 20px; background: var(--white); }
+    .links a { overflow-wrap: anywhere; }
+    .evidence { padding: 18px 20px; background: var(--blue-pale); }
+    .footer { margin-top: 42px; padding-top: 14px; border-top: 1px solid var(--line); color: var(--muted); font-size: 12px; }
+    @media (max-width: 760px) {
+      main { padding: 22px 16px 42px; }
+      .masthead { padding: 14px 16px; }
+      .hero, .summary, .iteration { grid-template-columns: 1fr; }
+      .hero { gap: 22px; }
+      .metrics { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      .bar-row { grid-template-columns: 1fr 2fr 58px; gap: 8px; }
+      .links { grid-template-columns: 1fr; }
+    }
+    @media print {
+      @page { size: A4; margin: 14mm 13mm; }
+      html, body { background: #fff; font-size: 10pt; }
+      .masthead { padding: 8px 0; print-color-adjust: exact; -webkit-print-color-adjust: exact; }
+      main { max-width: none; padding: 8mm 0 0; }
+      h1 { font-size: 32pt; }
+      h2 { font-size: 20pt; }
+      .metrics { gap: 6px; margin: 12px 0 22px; }
+      .metric { min-height: 92px; padding: 10px; }
+      .metric-value { font-size: 23pt; }
+      section, article, table, .chart, .callout { break-inside: avoid; }
+      a { color: inherit; }
+      .footer { margin-top: 20px; }
+    }
+  </style>
+</head>
+<body>
+  <a class="skip" href="#report">Skip to report</a>
+  <header class="masthead">
+    <div class="masthead-inner">
+      <div class="brand">Friendly Labor Code · Evaluation</div>
+      <div><a href="https://github.com/Mardi-pro/friendly-labor-code">Repository</a></div>
+    </div>
+  </header>
+  <main id="report">
+    <div class="hero">
+      <div>
+        <p class="eyebrow">Golden set · 19 October 2026</p>
+        <h1>What the assistant gets right, and where it misses.</h1>
+        <p class="dek">Evaluation of Portuguese Labour Code answers grounded in retrieved legal excerpts. Results below cover one 20-case set and one recorded source snapshot, not general legal accuracy.</p>
+      </div>
+      <aside class="snapshot">
+        <strong>Evaluation snapshot</strong>
+        <p>Answer prompt: <code>labor_code_v4</code><br>Judge prompt: <code>judge_prompt_v2</code><br>Source fetched: 2026-10-16 20:37 UTC<br><a href="https://www.pgdlisboa.pt/leis/lei_mostra_articulado.php?ficha=1&amp;artigo_id=&amp;nid=1047&amp;pagina=1&amp;tabela=leis&amp;nversao=&amp;so_miolo=">PGDLisboa · Portuguese Labour Code</a></p>
+      </aside>
+    </div>
+
+    <div class="metrics" aria-label="Key evaluation metrics">
+      <div class="metric"><span class="metric-label">Cases</span><span class="metric-value">20</span><span class="metric-note">16 in-scope · 4 out-of-scope</span></div>
+      <div class="metric"><span class="metric-label">Article recall</span><span class="metric-value">85.2%</span><span class="metric-note">23 of 27 expected article references retrieved</span></div>
+      <div class="metric"><span class="metric-label">All deterministic checks</span><span class="metric-value">10 / 20</span><span class="metric-note">Retrieval, citation and abstention checks</span></div>
+      <div class="metric"><span class="metric-label">Judge v2</span><span class="metric-value">18 / 2</span><span class="metric-note">PASS / FAIL · 0 UNKNOWN</span></div>
+    </div>
+
+    <section aria-labelledby="readout-title">
+      <div class="section-head"><h2 id="readout-title">Executive readout</h2><span class="section-tag">The strongest defensible number is retrieval coverage</span></div>
+      <div class="summary">
+        <div class="summary-copy">
+          <h3>23 / 27 expected article references retrieved</h3>
+          <p>Article-level recall is <strong>85.2%</strong>. We use it as the headline metric because a grounded answer first needs the expected legal material in context. It does not measure whether the retrieved excerpts are relevant, whether the answer applies them correctly, or whether an answer is legally complete.</p>
+          <p class="note">At case level, all required articles were retrieved in 13 of 16 in-scope cases (81.3%). All required citations appeared in only 6 of 16 (37.5%).</p>
+        </div>
+        <aside class="callout">
+          <h3>Abstention behavior</h3>
+          <p>Expected abstention: 4 cases. Actual abstention: 5. Overall match: <strong>19 / 20 (95%)</strong>. All four out-of-scope cases abstained; CT-003 was an in-scope false abstention after Articles 17.º and 19.º were not retrieved.</p>
+        </aside>
+      </div>
+      <div class="chart" aria-label="Case-level coverage rates">
+        <div class="bar-row"><span>All expected articles retrieved</span><div class="bar-track"><div class="bar-fill" style="--value:81.3%"></div></div><span class="bar-value">13 / 16</span></div>
+        <div class="bar-row"><span>All required citations present</span><div class="bar-track"><div class="bar-fill" style="--value:37.5%"></div></div><span class="bar-value">6 / 16</span></div>
+        <div class="bar-row"><span>Deterministic checks all pass</span><div class="bar-track"><div class="bar-fill" style="--value:50%"></div></div><span class="bar-value">10 / 20</span></div>
+        <div class="bar-row"><span>Abstention expectation matched</span><div class="bar-track"><div class="bar-fill" style="--value:95%"></div></div><span class="bar-value">19 / 20</span></div>
+      </div>
+    </section>
+
+    <section aria-labelledby="metrics-title">
+      <div class="section-head"><h2 id="metrics-title">Metric detail</h2><span class="section-tag">Current run · recorded source snapshot</span></div>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Measure</th><th>Result</th><th>Interpretation</th></tr></thead>
+          <tbody>
+            <tr><td>Golden-set size</td><td><strong>20 cases</strong></td><td>16 in-scope labour-law questions; 4 out-of-scope questions.</td></tr>
+            <tr><td>Expected-article recall</td><td><strong>23 / 27 · 85.2%</strong></td><td>Expected article references found in the retrieved context.</td></tr>
+            <tr><td>Cases with full retrieval</td><td><strong>13 / 16 · 81.3%</strong></td><td>In-scope cases where every required article was retrieved.</td></tr>
+            <tr><td>Expected-citation coverage</td><td><strong>15 / 27 · 55.6%</strong></td><td>Expected references actually cited in the structured answer.</td></tr>
+            <tr><td>Cases with full citations</td><td><strong>6 / 16 · 37.5%</strong></td><td>In-scope cases where all required citations were present.</td></tr>
+            <tr><td>All deterministic checks passed</td><td><strong>10 / 20 · 50%</strong></td><td>Requires retrieval, citation, and expected-abstention checks to pass together.</td></tr>
+            <tr><td>Abstention agreement</td><td><strong>19 / 20 · 95%</strong></td><td>4 expected unknowns; 5 actual unknowns. The mismatch is CT-003.</td></tr>
+            <tr><td>Judge v2 verdicts</td><td><strong>18 PASS · 2 FAIL · 0 UNKNOWN</strong></td><td>Automated assessment only; not a substitute for reviewing the answers.</td></tr>
+            <tr><td>Current judge TPR / TNR</td><td><strong>Not reportable</strong></td><td>Existing human-labeled drafts do not match the current evaluation trace (the evaluator rejects CT-001). Do not transfer historical rates to this run.</td></tr>
+            <tr><td>Historical judge v1 TPR / TNR</td><td><strong>5.6% / 0%</strong></td><td>Calculated on 20 exact-matching archived v1 drafts: 18 human PASS and 2 human FAIL. This is historical, not judge-v2 performance.</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="note">Article recall and citation coverage use the 27 references marked <code>must_retrieve</code> in the golden set. They do not penalize irrelevant extra retrievals or establish legal correctness.</p>
+    </section>
+
+    <section aria-labelledby="failures-title">
+      <div class="section-head"><h2 id="failures-title">Failure taxonomy</h2><span class="section-tag">Overlapping categories; case IDs identify observed misses</span></div>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Failure mode</th><th>Count</th><th>Cases</th><th>Observed gap</th></tr></thead>
+          <tbody>
+            <tr class="failure"><td>Missing expected retrieval</td><td><strong>3 / 16</strong></td><td>CT-001, CT-003, CT-014</td><td>Missed Article 12.º; Articles 17.º and 19.º; Article 89.º, respectively.</td></tr>
+            <tr class="failure"><td>Missing expected citation</td><td><strong>10 / 16</strong></td><td>CT-001, 003, 004, 005, 007, 008, 010, 013, 014, 016</td><td>Ten answers omit at least one expected article citation; this includes retrieval misses.</td></tr>
+            <tr class="failure"><td>Incorrect abstention</td><td><strong>1 / 16</strong></td><td>CT-003</td><td>Question is in scope, but the answer abstains after the directly relevant test article is not retrieved.</td></tr>
+            <tr class="failure"><td>Judge says FAIL</td><td><strong>2 / 20</strong></td><td>CT-001, CT-003</td><td>Requires human review; the judge verdict is not a legal gold label.</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section aria-labelledby="iteration-title">
+      <div class="section-head"><h2 id="iteration-title">Iteration measured</h2><span class="section-tag">Observed comparison, not a controlled accuracy experiment</span></div>
+      <div class="iteration">
+        <article class="kept">
+          <h3>Kept provisionally · judge prompt v2</h3>
+          <p>The judge now requires one contiguous verbatim evidence quote in its original language and report metadata records the judge-prompt version. The archived v1 run had 1 PASS, 0 FAIL, 19 UNKNOWN; the v2 run has 18 PASS, 2 FAIL, 0 UNKNOWN. This removes the quote-validation UNKNOWN pattern, but it does not establish judge accuracy; current-v2 human TPR/TNR remain unavailable.</p>
+        </article>
+        <article class="dropped">
+          <h3>Abandoned · union original and translated retrieval queries</h3>
+          <p>A trial that merged candidate articles from both queries scored 8/20 deterministic passes, compared with 11/20 in the pre-change v4 report. The wider context also coincided with citation regressions. The retrieval change was removed; retrieval remains on the translated keyword query. Because answer generation and keyword translation are model-driven, this run-to-run comparison is directional, not controlled.</p>
+        </article>
+      </div>
+    </section>
+
+    <section aria-labelledby="method-title">
+      <div class="section-head"><h2 id="method-title">Method and evidence</h2><span class="section-tag">Reproducible inputs</span></div>
+      <div class="summary">
+        <div class="summary-copy">
+          <h3>Evaluation method</h3>
+          <p>For each golden case, the app generates Portuguese retrieval keywords, retrieves legal articles from the cached source, produces a structured answer, then runs one judge call against that answer and the supplied excerpts. Deterministic checks compare expected article retrieval, citations, and abstention. A full 20-case run uses 20 cases and one judge assessment per answer; the application also makes translation and answer-generation calls.</p>
+          <p class="note">This report uses the cached snapshot dated 2026-10-16T20:37:54.821404+00:00. Results do not generalize beyond this golden set or snapshot.</p>
+        </div>
+        <div class="links" aria-label="Evaluation artifacts">
+          <a href="../evaluation/golden_set.json">Golden dataset · 20 cases</a>
+          <a href="../evaluation/golden_results.json">Current evaluation traces</a>
+          <a href="../prompts/labor_code_v4.md">Answer prompt · labor_code_v4</a>
+          <a href="../evaluation/judge_prompt_v2.md">Judge prompt · judge_prompt_v2</a>
+          <a href="../evaluation/draft_labels.csv">Human review labels · prior drafts</a>
+          <a href="../data/labor_code.json">Cached legal source snapshot</a>
+          <a href="../Project%20Guidelines.md">Project checklist</a>
+          <a href="../docs/copilot_evidence.md">Copilot steering evidence log</a>
+        </div>
+      </div>
+    </section>
+
+    <section aria-labelledby="steering-title">
+      <div class="section-head"><h2 id="steering-title">Steering evidence and limits</h2><span class="section-tag">Repository evidence, not a captured Copilot experiment</span></div>
+      <div class="evidence">
+        <p><strong>Two steering artifacts:</strong> root <a href="../AGENTS.md">AGENTS.md</a> directs all model calls through <code>ask()</code>, preserves prompt versions, and requires tests and abstention when excerpts do not support an answer. The reusable <a href="../.github/skills/run-evaluation/SKILL.md">run-evaluation skill</a> specifies the live evaluation procedure and cautions against treating automated checks as human review.</p>
+        <p><strong>Evidence limitation:</strong> repository files show these rules and their intended application, but no before/after screenshot or same-request Copilot session comparison is available. No such evidence is claimed here.</p>
+        <p><strong>Human-label limitation:</strong> the CSV has 20 reviewed drafts (18 PASS, 2 FAIL), but its drafts match the archived v1 trace, not the current v4 trace. Historical v1 TPR/TNR were computed only after matching those archived drafts. Re-review and label the current trace before claiming judge-v2 TPR/TNR.</p>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <p>Report generated from the local evaluation artifacts on 2026-10-19. Source: <a href="https://github.com/Mardi-pro/friendly-labor-code">github.com/Mardi-pro/friendly-labor-code</a> (remote URL; public availability was not independently verified). The assistant provides general information, not legal advice.</p>
+    </footer>
+  </main>
+</body>
+</html>
